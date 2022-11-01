@@ -1,7 +1,7 @@
 #Second exercise , лице и периметър на окръжност
 from math import pi
 
-r = float(input())
+r = float(input("r = "))
 perimeter = 2 * pi * r
 S = pi * r**2
 perimeter = float(round(perimeter, 3))

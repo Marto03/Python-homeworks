@@ -5,7 +5,7 @@ class Person:
         self.age = age
         self.nationality = nationality
 
-    def print_1(self):
+    def print(self):
         print(f"My name is {self.name} {self.last_name} and I'm {self.nationality}.")
 
 first_person = Person("Maritn", "Aleksandrov", "19", "Bulgarian")
@@ -18,4 +18,4 @@ third_person = Person("Alex", "Petkov", "20", "Bulgarian")
 #list_1.append(second_person.nationality)
 #list_1.append(third_person.name)
 #list_1.append(third_person.nationality)
-first_person.print_1()
+first_person.print()

@@ -49,15 +49,15 @@ class Menu:
                     # ask the user to input the necessary command parameters
                     name = input("Enter the character name (alpha-numeric): ")
                     if name in characters_names:
-                        raise CharacterExists("Error: Character exists")
+                        raise CharacterExists("Character exists")
                     sex = input("Enter the character sex(Male or Female): ")
                     if sex != "Male" and sex != "Female":
-                        raise InvalidSex("Error: Invalid sex")
+                        raise InvalidSex("Invalid sex")
                     ch_class = input("Enter the character class(Warrior, Mage, Priest, Rogue): ")
                     if name.isdigit() or sex.isdigit() or ch_class.isdigit():
-                        raise InvalidParameters("Error: Not supporting numbers!")
+                        raise InvalidParameters("Not supporting numbers!")
                     if ch_class not in characters_class:
-                        raise InvalidCharacter("Error: Invalid character!")
+                        raise InvalidCharacter("Invalid character!")
 
                     characters_names.append(name)
                     char = self.command_create_character(name, sex, ch_class)
@@ -73,7 +73,7 @@ class Menu:
                         print(f"{name} using {weap}\n")
                         continue
                     else:
-                        raise CharacterNotFound("Error: Character not found")
+                        raise CharacterNotFound("Character not found")
 
 
                 if choice == "3":
@@ -84,7 +84,7 @@ class Menu:
                         print(f"To character named {name} added additional weapon {add_weapon}\n")
                         continue
                     else:
-                        raise CharacterNotFound("Error: Character not found")
+                        raise CharacterNotFound("Character not found")
 
                 if choice == "4":
                     print(f"{characters} \n")
@@ -100,7 +100,7 @@ class Menu:
                 if choice == "Exit":
                     break
                 else:
-                    raise InvalidCommand("Error: Invalid choice")
+                    raise InvalidCommand("Invalid choice")
 
 
 

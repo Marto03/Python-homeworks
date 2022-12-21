@@ -1,0 +1,2 @@
+class InvalidCharacter(Exception):
+    pass

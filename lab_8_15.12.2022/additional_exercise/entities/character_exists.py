@@ -1,0 +1,2 @@
+class CharacterExists(Exception):
+    pass
